@@ -2,21 +2,23 @@ package model;
 
 import java.util.List;
 
+import metier.Jeu;
+
 public class Boutique {
 
-	String nom;
-	String Adresse;
-	List<Jeux> listeJeux;
+	private String nom;
+	private String adresse;
+	private List<Jeu> listeJeux;
 	
 	
 	public Boutique() {
 		
 	}
 	
-	public Boutique(String nom, String adresse, List<Jeux> listeJeux) {
+	public Boutique(String nom, String adresse, List<Jeu> listeJeux) {
 		super();
 		this.nom = nom;
-		Adresse = adresse;
+		this.adresse = adresse;
 		this.listeJeux = listeJeux;
 	}
 
@@ -29,24 +31,24 @@ public class Boutique {
 	}
 
 	public String getAdresse() {
-		return Adresse;
+		return adresse;
 	}
 
 	public void setAdresse(String adresse) {
-		Adresse = adresse;
+		this.adresse = adresse;
 	}
 
-	public List<Jeux> getListeJeux() {
+	public List<Jeu> getListeJeux() {
 		return listeJeux;
 	}
 
-	public void setListeJeux(List<Jeux> listeJeux) {
+	public void setListeJeux(List<Jeu> listeJeux) {
 		this.listeJeux = listeJeux;
 	}
 
 	@Override
 	public String toString() {
-		return "Boutique [nom=" + nom + ", Adresse=" + Adresse + "]";
+		return "Boutique [nom=" + nom + ", Adresse=" + adresse + "]";
 	}
 
 	
