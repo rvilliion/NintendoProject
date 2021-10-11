@@ -2,15 +2,14 @@ package test;
 
 import java.util.*;
 
-import metier.Console;
-import metier.Jeu;
+import metier.*;
 import model.Client;
 
 public class Test {
 
 	public static void main(String[] args) {
-		Console wii = new Console("Wii");
-		Console ds = new Console("DS");
+		Console wii = new Salon("Wii");
+		Console ds = new Portable("DS");
 		List<Console> listConsole = new ArrayList();
 		listConsole.add(ds);
 		listConsole.add(wii);
