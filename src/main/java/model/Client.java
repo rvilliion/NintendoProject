@@ -3,6 +3,8 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
+import metier.Jeu;
+
 public class Client {
 	
 	private String nom;
