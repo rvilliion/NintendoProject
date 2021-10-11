@@ -9,14 +9,14 @@ public class Client {
 	
 	private String nom;
 	private String prenom;
-	private List<Jeu> jeux =new ArrayList();
+	private List<achat> achat;
 	
 	
-	public Client(String nom, String prenom, List<Jeu> jeux) {
+	public Client(String nom, String prenom, List<achat> achat) {
 		super();
 		this.nom = nom;
 		this.prenom = prenom;
-		this.jeux = jeux;
+		this.achat = achat;
 	}
 
 
@@ -40,13 +40,13 @@ public class Client {
 	}
 
 
-	public List<Jeu> getJeux() {
-		return jeux;
+	public List<achat> getAchat() {
+		return achat;
 	}
 
 
-	public void setJeux(List<Jeu> jeux) {
-		this.jeux = jeux;
+	public void setAchat(List<achat> achat) {
+		this.achat = achat;
 	}
 
 
@@ -54,6 +54,10 @@ public class Client {
 	public String toString() {
 		return "Client [nom=" + nom + ", prenom=" + prenom + "]";
 	}
+
+
+	
+
 	
 	
 	
