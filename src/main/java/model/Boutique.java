@@ -8,18 +8,18 @@ public class Boutique {
 
 	private String nom;
 	private String adresse;
-	private List<Jeu> listeJeux;
+	private List<Jeu> Jeux;
 	
 	
 	public Boutique() {
 		
 	}
 	
-	public Boutique(String nom, String adresse, List<Jeu> listeJeux) {
+	public Boutique(String nom, String adresse, List<Jeu> Jeux) {
 		super();
 		this.nom = nom;
 		this.adresse = adresse;
-		this.listeJeux = listeJeux;
+		this.Jeux = Jeux;
 	}
 
 	public String getNom() {
@@ -39,11 +39,11 @@ public class Boutique {
 	}
 
 	public List<Jeu> getListeJeux() {
-		return listeJeux;
+		return Jeux;
 	}
 
-	public void setListeJeux(List<Jeu> listeJeux) {
-		this.listeJeux = listeJeux;
+	public void setListeJeux(List<Jeu> Jeux) {
+		this.Jeux = Jeux;
 	}
 
 	@Override
