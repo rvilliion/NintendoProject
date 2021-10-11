@@ -3,6 +3,9 @@ package test;
 import java.util.*;
 
 import metier.*;
+import metier.Console;
+import metier.Jeu;
+import model.Boutique;
 import model.Client;
 
 public class Test {
