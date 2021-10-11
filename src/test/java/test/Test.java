@@ -1,20 +1,18 @@
 package test;
 
-import java.util.*;
 
-import metier.Console;
-import metier.Jeu;
-import model.Boutique;
-import model.Client;
+import metier.*;
+import java.util.ArrayList;
+import java.util.List;
+import model.*;
+
 
 public class Test {
 
 	public static void main(String[] args) {
 		Console wii = new Salon("Wii");
 		Console ds = new Portable("DS");
-		List<Console> listConsole = new ArrayList();
-		listConsole.add(ds);
-		listConsole.add(wii);
+		
 		
 		List<Console> listeConsole = new ArrayList();
 		listeConsole.add(wii);
@@ -25,8 +23,16 @@ public class Test {
 		Jeu jeuwii3 = new Jeu("Jeu Wii 3", listeConsole);
 		Jeu pokemon = new Jeu("Pokemon", listeConsole);
 		Jeu jeuds2 = new Jeu("jeu DS 2", listeConsole);
+		
+		
+		List<Jeu> listeJeu = new ArrayList();
+		listeJeu.add(wiisport);
+		listeJeu.add(pokemon);
+		listeJeu.add(jeuwii2);
 				
-		Client client1 = new Client("Dupont", "Paul", listeJeu);
+		
+		Boutique b1 = new Boutique("Micromania","Nantes",listeJeu);
+		//Client client1 = new Client("Dupont", "Paul", listeJeu);
 	}
 
 }
