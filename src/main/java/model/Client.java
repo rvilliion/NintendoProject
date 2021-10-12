@@ -9,10 +9,10 @@ public class Client {
 	
 	private String nom;
 	private String prenom;
-	private List<achat> achat;
+	private List<Achat> achat;
 	
 	
-	public Client(String nom, String prenom, List<achat> achat) {
+	public Client(String nom, String prenom, List<Achat> achat) {
 		super();
 		this.nom = nom;
 		this.prenom = prenom;
@@ -40,12 +40,12 @@ public class Client {
 	}
 
 
-	public List<achat> getAchat() {
+	public List<Achat> getAchat() {
 		return achat;
 	}
 
 
-	public void setAchat(List<achat> achat) {
+	public void setAchat(List<Achat> achat) {
 		this.achat = achat;
 	}
 

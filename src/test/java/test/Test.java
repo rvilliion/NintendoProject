@@ -2,6 +2,8 @@ package test;
 
 
 import metier.*;
+
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import model.*;
@@ -29,10 +31,18 @@ public class Test {
 		listeJeu.add(wiisport);
 		listeJeu.add(pokemon);
 		listeJeu.add(jeuwii2);
-				
+		
 		
 		Boutique b1 = new Boutique("Micromania","Nantes",listeJeu);
-		//Client client1 = new Client("Dupont", "Paul", listeJeu);
+		Achat achat1 = new Achat(wiisport, LocalDate.now(), 15.90, b1);
+		Achat achat2 = new Achat(pokemon, LocalDate.now(), 21.90, b1);
+		Achat achat3 = new Achat(jeuwii3, LocalDate.now(), 30.90, b1);
+		List<Achat> listeAchat = new ArrayList();
+		listeAchat.add(achat1);
+		listeAchat.add(achat2);
+		listeAchat.add(achat3);
+		
+		Client client1 = new Client("Dupont", "Paul", listeAchat);
 	}
 
 }
