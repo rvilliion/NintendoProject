@@ -24,12 +24,6 @@ public class Achat {
 		this.prix = prix;
 		this.boutique = boutique;
 	}
-	
-	
-	public Achat() {
-		
-	}
-
 
 	public Jeu getJeu() {
 		return jeu;
