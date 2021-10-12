@@ -12,8 +12,8 @@ import model.*;
 public class Test {
 
 	public static void main(String[] args) {
-		Console wii = new Salon("Wii");
-		Console ds = new Portable("DS");
+		Console wii = new Salon("Wii",150,"12-04-23");
+		Console ds = new Portable("DS",110,"10-11-16");
 		
 		
 		List<Console> listeConsole = new ArrayList();
